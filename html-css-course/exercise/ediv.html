@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>div exercises</title>
+    <style>
+      .red-box {
+        width: 50px;
+        height: 50px;
+        background-color: red;
+      }
+
+      .green-circle {
+        width: 50px;
+        height: 50px;
+        background-color: green;
+        border-radius: 25px;
+      }
+
+      .service-container {
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgb(150, 150, 150);
+        width: 300px;
+        padding-left: 15px;
+        padding-bottom: 20px;
+      }
+
+      .youtubem-container {
+        background-color: rgb(56, 56, 56);
+        width: 350px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 20px;
+        padding-left: 20px;
+      }
+
+      .youtubem-install {
+        font-size:26px;
+        font-weight: bold;
+        font-family: Arial;
+        margin-bottom: 10px;
+        color: white;
+      }
+
+      .youtubem-text {
+        font-family: Arial;
+        color: darkgrey;
+        width: 350px;
+      }
+      
+      .tweeter-container {
+        width: 350px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+        border-radius: 8px;
+      }
+
+      .tweeter-profile-pic {
+        vertical-align: middle;
+        width: 40px;
+        height: 40px;
+        border-radius: 40px;
+        object-position: cover;
+        object-position: middle;
+        margin-right: 2px;
+        margin-left: 10px;
+      }
+
+      .tweeter-profile-post-box {
+        vertical-align: middle;
+        margin-left: 0;
+        width: 210px;
+        border: none;
+      }
+
+      .tweeter-profile-post-button {
+        vertical-align: middle;
+        background-color: rgb(29, 155, 240);
+        border: none;
+        border-radius: 100px;
+        color: white;
+        padding-right: 12px;
+        padding-left: 12px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        cursor: pointer;
+      }
+
+      .fb-friend-container {
+        width: 130px;
+        display: inline-block;
+        margin-left: 5px;
+        margin-right: 10px;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+      }
+
+      .fb-person-img {
+        display: block;
+        width: 130px;
+        height: 140px;
+        object-fit: cover;
+        object-position: middle;
+        
+      }
+
+      .fb-person-name {
+        font-family: Helvetica;
+        margin-bottom: 0px;
+        margin-top: 5px;
+        margin-left: 5px;
+        font-size: 16px;
+      }
+
+      .fb-mutuals-count {
+        margin-top: 0px;
+        margin-bottom: 5px;
+        margin-left: 5px;
+        color: darkgrey;
+        font-size: 12px;
+        font-family: Helvetica;
+      }
+
+      .fb-add-button {
+        margin-bottom: 5px;
+        margin-left: 5px;
+        border-radius: 4px;
+        border: none;
+        background-color: rgb(8, 102, 255);
+        color: white;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-right: 10px;
+        padding-left: 10px;
+        font-family: Helvetica;
+      }
+      
+      .google-logo {
+        width: 200px;
+        height: 100px;
+        display: block;
+        object-fit: contain;
+        display: inline-block;
+      }
+
+      .google-search-box{
+        font-size: 16px;
+        width: 500px;
+        border: none;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 30px;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+        margin-bottom: 20px;
+        display: inline-block;
+      }
+
+      .google-container {
+        text-align: center;
+        width: 550px;
+        height: 200px;
+      }
+
+      .google-buttons {
+        border: none;
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        font-family: Arial;
+        font-weight: 600;
+      }
+
+
+    </style>
+  </head>
+  <body>
+  <div class="red-box"></div>
+
+  <br><br>
+
+  <div class="green-circle"></div>
+
+  <br><br>
+
+  <div class="service-container">
+  <p class="service-question">Satisfied with our service?</p>
+  <button>Yes</button>
+  <button>No</button>
+  </div>
+
+  <br><br>
+
+  <div class="youtubem-container">
+    <p class="youtubem-install">Install Youtube Music</p>
+    <p class="youtubem-text">Add Youtube Music to your desktop for quick and easy access</p>
+  </div>
+
+  <br><br><br>
+
+  <div class="tweeter-container">
+    <img class="tweeter-profile-pic" src="eimages/rin.webp">
+    <input class="tweeter-profile-post-box" placeholder="What's happening?">
+    <button class="tweeter-profile-post-button">Tweet</button>
+  </div>
+
+  <br><br><br>
+
+  <div class="fb-friend-container">
+    <img class="fb-person-img" src="eimages/rin.webp">
+    <p class="fb-person-name">Rin</p>
+    <p class="fb-mutuals-count">1 mutual friends</p>
+    <button class="fb-add-button">Add Friend</button>
+  </div>
+
+  <div class="fb-friend-container">
+    <img class="fb-person-img" src="eimages/download.webp">
+    <p class="fb-person-name">Chipi</p>
+    <p class="fb-mutuals-count">5000 mutual friends</p>
+    <button class="fb-add-button">Add Friend</button>
+  </div>
+
+  <div class="fb-friend-container">
+    <img class="fb-person-img" src="eimages/hermano.webp">
+    <p class="fb-person-name">Hermano</p>
+    <p class="fb-mutuals-count">69 mutual friends</p>
+    <button class="fb-add-button">Add Friend</button>
+  </div>
+
+  <br><br><br>
+
+  <div class="google-container">
+    <img class="google-logo" src="eimages/Google-Logo.webp">
+    <input class="google-search-box" placeholder="Search Google or type a URL">
+    <button class="google-buttons">Google Search</button>
+    <button class="google-buttons">I'm Feeling Lucky</button>
+  </div>
+
+  <br><br><br><br><br><br><br><br><br><br>
+  </body>
+</html>

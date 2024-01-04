@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>Nested Layouts Technique</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+      p {
+        margin-bottom: 0px;
+        margin-top: 0px;
+        font-size: 11px;
+        font-family: Roboto, Arial;
+      }
+
+      .instagram-profile-picture {
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+        border-radius: 20px;
+        margin-top: 5px;
+        margin-left: 5px;
+      }
+
+      .instagram-picture-container {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        vertical-align: top;
+      }
+
+      .instagram-info-container {
+        display: inline-block;
+        width: 160px;
+        margin-left: 5px;
+      }
+
+      .instagram-username {
+        font-weight: bold;
+        margin-top: 2px;
+      }
+
+      .instagram-nickname,
+      .instagram-bio {
+        color: rgb(96, 96, 96);
+        margin-bottom: 2px;
+      }
+
+      .instagram-follow-container {
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 15px;
+      }
+
+      .instagram-follow-button {
+        border: none;
+        background-color: rgb(89, 189, 222);
+        color: white;
+        border-radius: 4px;
+        padding-right: 5px;
+        padding-left: 5px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+      }
+
+      .instagram {
+        width: 300px;
+      }
+
+      .fb-friend-container {
+        width: 130px;
+        display: inline-block;
+        margin-left: 5px;
+        margin-right: 10px;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+      }
+
+      .fb-person-img {
+        display: block;
+        width: 130px;
+        height: 140px;
+        object-fit: cover;
+        object-position: middle;
+        
+      }
+
+      .fb-person-name {
+        font-family: Helvetica;
+        margin-bottom: 0px;
+        margin-top: 5px;
+        margin-left: 5px;
+        font-size: 16px;
+      }
+
+      .fb-mutuals-count {
+        margin-top: 3px;
+        margin-bottom: 5px;
+        margin-left: 0px;
+        color: darkgrey;
+        font-size: 12px;
+        font-family: Helvetica;
+        display: inline-block;
+        vertical-align: top;
+      }
+
+      .fb-add-button {
+        margin-bottom: 5px;
+        margin-left: 5px;
+        border-radius: 4px;
+        border: none;
+        background-color: rgb(8, 102, 255);
+        color: white;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-right: 10px;
+        padding-left: 10px;
+        font-family: Helvetica;
+      }
+
+      .fb-small-person-img {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        object-fit: cover;
+        object-position: middle;
+        border-radius: 10px;
+      }
+
+      .fb-small-person-container {
+        display: inline-block;
+        margin-left: 5px;
+      }
+
+
+    </style>
+  </head>
+
+  <body>
+    <div class="instagram">
+      <div class="instagram-picture-container">
+        <img class="instagram-profile-picture" src="eimages/rin.webp">
+      </div>
+  
+      <div class="instagram-info-container">
+        <p class="instagram-username">oliver</p>
+        <p class="instagram-nickname">the cat</p>
+        <p class="instagram-bio">Popular</p>
+      </div>
+      
+      <div class="instagram-follow-container">
+        <button class="instagram-follow-button">Follow</button>
+      </div>
+    </div>
+
+    <div class="instagram">
+      <div class="instagram-picture-container">
+        <img class="instagram-profile-picture" src="eimages/hermano.webp">
+      </div>
+  
+      <div class="instagram-info-container">
+        <p class="instagram-username">Hermano</p>
+        <p class="instagram-nickname">mexican cat</p>
+        <p class="instagram-bio">Popular</p>
+      </div>
+      
+      <div class="instagram-follow-container">
+        <button class="instagram-follow-button">Follow</button>
+      </div>
+    </div>
+
+    <div class="instagram">
+      <div class="instagram-picture-container">
+        <img class="instagram-profile-picture" src="eimages/download.webp">
+      </div>
+  
+      <div class="instagram-info-container">
+        <p class="instagram-username">Chipi</p>
+        <p class="instagram-nickname">chipi</p>
+        <p class="instagram-bio">Popular</p>
+      </div>
+      
+      <div class="instagram-follow-container">
+        <button class="instagram-follow-button">Follow</button>
+      </div>
+    </div>
+
+    <br><br>
+
+    <div class="fb-friend-container">
+      <div>
+        <img class="fb-person-img" src="eimages/rin.webp">
+      </div>
+    
+      <div>
+        <p class="fb-person-name">Rin</p>
+      </div>
+      
+      <div>
+        <div class="fb-small-person-container">
+          <img class="fb-small-person-img" src="eimages/rin.webp">
+        </div>
+        <p class="fb-mutuals-count">2 mutual friends</p>
+      </div>
+      
+      <div>
+        <button class="fb-add-button">Add Friend</button>
+      </div>
+      
+    </div>
+  
+    <div class="fb-friend-container">
+      <div>
+        <img class="fb-person-img" src="eimages/download.webp">
+      </div>
+
+      <div>
+        <p class="fb-person-name">Chipi</p>
+      </div>
+      
+      <div>
+        <div class="fb-small-person-container">
+          <img class="fb-small-person-img" src="eimages/download.webp">
+        </div>
+        <p class="fb-mutuals-count">50 mutual friends</p>
+      </div>
+      
+      <div>
+        <button class="fb-add-button">Add Friend</button>
+      </div>
+      
+    </div>
+  
+    <div class="fb-friend-container">
+      <div>
+        <img class="fb-person-img" src="eimages/hermano.webp">
+      </div>
+
+      <div>
+        <p class="fb-person-name">Hermano</p>
+      </div>
+      
+      <div>
+        <div class="fb-small-person-container">
+          <img class="fb-small-person-img" src="eimages/hermano.webp">
+        </div>
+        <p class="fb-mutuals-count">69 mutual friends</p>
+      </div>
+      
+      <div>
+        <button class="fb-add-button">Add Friend</button>
+      </div>
+      
+    </div>
+      
+
+    <br><br><br><br><br><br><br><br><br>
+  </body>
+</html>

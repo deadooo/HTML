@@ -1,0 +1,116 @@
+.simple-name-box,
+.simple-email-box {
+  display: block;
+}
+
+.thanks-text {
+  width: 200px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.google-logo {
+  width: 200px;
+  height: 100px;
+  display: block;
+  object-fit: contain;
+  margin-left: 100px;
+}
+
+.google-search-box{
+  font-size: 16px;
+  width: 500px;
+  border: none;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 30px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.first-name-box,
+.last-name-box {
+  display: inline-block;
+  color: lightgrey;
+  width: 100px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 20px;
+  border-radius: 6px;
+  border-width: 1px;
+  border-color: lightgrey;
+  margin-bottom: 10px;
+}
+
+.email-box {
+  width: 252px;
+  display: block;
+  color: lightgrey;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  border-radius: 6px;
+  border-width: 1px;
+  margin-bottom: 10px;
+}
+
+.sign-up-button {
+  padding-left: 109px;
+  padding-right: 109px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  background-color: rgb(29, 155, 240);
+  border: none;
+  color: white;
+  border-radius: 6px;
+}
+
+.ride-title {
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+.pickup-box,
+.destination-box {
+  display: block;
+  margin-bottom: 5px;
+  width: 290px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border: none;
+  background-color: rgb(235, 234, 234);
+  font-size: 12px;
+}
+
+
+.request-button {
+  margin-top: 10px;
+  margin-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  color: white;
+  border: none;
+  background-color: black;
+  font-size: 12px;
+}
+
+.later-button {
+  margin-top: 15px;
+  margin-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  color: black;
+  border: none;
+  background-color: rgb(235, 234, 234);
+  font-size: 12px;
+}
