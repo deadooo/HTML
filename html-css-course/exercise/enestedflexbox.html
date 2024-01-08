@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+  <head><title>Nested Flexbox Exercises</title></head>
+  <style>
+
+    .gmail-container {
+      display: flex;
+      flex-direction: column;
+      width: 260px;
+      box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+      border-radius: 4px;
+      padding-top: 8px;
+      padding-left: 8px;
+      padding-bottom: 12px;
+      margin-top: 50px;
+    }
+
+    .inbox-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-top: 8px;
+      margin-bottom: 8px;
+    }
+
+    .profile-picture {
+      height: 35px;
+      width: 35px;
+      border-radius: 17.5px;
+      margin-right: 5px;
+      object-fit: cover;
+    }
+
+    .inbox-texts-container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .inbox-top-row-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+
+    .category,
+    .inbox-title,
+    .inbox-time,
+    .inbox-subject,
+    .inbox-content {
+      font-family: Arial;
+      font-size: 10px;
+      margin-bottom: 2px;
+    }
+
+    .category {
+      font-size: 8px;
+    }
+
+    .inbox-title,
+    .inbox-subject {
+      font-weight: bold;
+    }
+
+    .category,
+    .inbox-time,
+    .inbox-content {
+      color: gray;
+    }
+
+    .twitter-container {
+      display: flex;
+      padding-top: 4px;
+      padding-left: 8px;
+      padding-bottom: 4px;
+      width: 340px;
+    }
+
+    .twitter-pfp {
+      height: 40px;
+      width: 40px;
+      border-radius: 20px;
+      object-fit: cover;
+      margin-right: 8px;
+    }
+
+    .twitter-first-row {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .twitter-name {
+      font-family: Arial;
+      font-weight: bold;
+      font-size: 13px;
+      margin-right: 4px;
+    }
+
+    .twitter-usertag {
+      font-family: Arial;
+      font-size: 13px;
+      font-weight: 500;
+      color: gray;
+    }
+
+    .twitter-second-row {
+      font-family: Arial;
+      font-size: 13px;
+    }
+
+    .twitter-youtube-link-container {
+      display: flex;
+      border-width: 1px;
+      border-style: solid;
+      align-items: center;
+      height: 70px;
+      width: 280px;
+      margin-top: 6px;
+      border-radius: 14px;
+      overflow: hidden;
+      border-color: rgb(220, 220, 220);
+    }
+
+    .twitter-youtube-texts-container {
+      flex: 1;
+    }
+
+    .twitter-youtube-image-container {
+      width: 80px;
+      height: 100px;
+      background-color: rgb(220, 220, 220);
+      margin-right: 10px;
+    }
+
+    .twitter-youtube-website {
+      font-size: 13px;
+      color: rgb(111, 111, 111);
+      margin-bottom: 3px;
+      font-family: Arial;
+    }
+
+    .twitter-youtube-title {
+      font-size: 12px;
+      font-family: Arial;
+    }
+  </style>
+  <body style="
+  padding-bottom: 200px;
+  ">
+    <div class="twitter-container">
+      <div class="twitter-pfp-container">
+        <img class="twitter-pfp" src="eimages/rin.webp">
+      </div>
+      <div>
+        <div class="twitter-first-row">
+          <div class="twitter-name">supersimple.dev</div>
+          <div class="twitter-usertag">@SuperSimpleDev</div>
+        </div>
+        <div class="twitter-second-row">
+          What is backend web development? A complete overview. New video is up!
+        </div>
+        <div class="twitter-youtube-link-container">
+          <div class="twitter-youtube-image-container"></div>
+          <div class="twitter-youtube-texts-container">
+            <div class="twitter-youtube-website">youtube.com</div>
+            <div class="twitter-youtube-title">Backend web development - a complete overview (2021)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gmail-container">
+      <div class="category">ALL INBOXES</div>
+      <div class="inbox-container">
+        <div class="image-container">
+          <img class="profile-picture" src="eimages/rin.webp">
+        </div>
+        <div class="inbox-texts-container">
+          <div class="inbox-top-row-container">
+            <div class="inbox-title">Chewy Promotions</div>
+            <div class="inbox-time">4:58 PM</div>
+          </div>
+          <div class="inbox-subject">Biggest sales of the year!</div>
+          <div class="inbox-content">Hey there! We're writing to tell you about our...</div>
+        </div>
+      </div>
+
+      <div class="inbox-container">
+        <div class="image-container">
+          <img class="profile-picture" src="eimages/download.webp">
+        </div>
+        <div class="inbox-texts-container">
+          <div class="inbox-top-row-container">
+            <div class="inbox-title">Best Buy</div>
+            <div class="inbox-time">12:32 PM</div>
+          </div>
+          <div class="inbox-subject">Your Best Buy eReceipt</div>
+          <div class="inbox-content">Thank you for shopping at Best Buy, here is...</div>
+        </div>
+      </div>
+
+      <div class="inbox-container">
+        <div class="image-container">
+          <img class="profile-picture" src="eimages/hermano.webp">
+        </div>
+        <div class="inbox-texts-container">
+          <div class="inbox-top-row-container">
+            <div class="inbox-title">Help i Mexican</div>
+            <div class="inbox-time">9:00 AM</div>
+          </div>
+          <div class="inbox-subject">Help Border help</div>
+          <div class="inbox-content">Can you send me money, i'm your father...</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="
+    margin-top: 50px;
+    display: flex;
+    height: 50px
+    ">
+      <div style="
+      width: 100px;
+      background-color: lightpink;
+      "></div>
+      <div style="
+      width: 200px;
+      background-color: lightblue;
+      ">
+        <div style="
+
+        ">row1
+        </div>
+        <div style="
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        ">
+          <div style="
+          background-color: black;
+          color: white;
+          ">row2</div>
+          <div style="
+          background-color: black;
+          color: white;
+          ">row2</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="
+      margin-top: 30px;
+      display: flex;
+      border-color: lightblue;
+      height: 50px;
+      ">
+      <div style="
+      display: flex;
+      width: 100px;
+      background: lightpink;
+      justify-content: center;
+      align-items: center;
+      ">
+        <div style="
+        border: none;
+        color: white;
+        background-color: black;
+        ">item1</div>
+      </div>
+      <div style="
+      width: 200px;
+      background-color: lightblue;
+      "></div>
+    </div>
+  </body>
+</html>
